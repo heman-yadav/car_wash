@@ -6,8 +6,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/car_washing
-ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 
---bind unix:/home/ubuntu/car_washing/car_wash/car_wash.sock car_wash.wsgi:application
+ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/car_washing/car_wash/car_wash.sock car_wash.wsgi:application
 
        
 [Install]
