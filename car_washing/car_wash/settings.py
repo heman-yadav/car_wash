@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'car_washing.urls'
+ROOT_URLCONF = 'car_wash.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'car_washing.wsgi.application'
+WSGI_APPLICATION = 'car_wash.wsgi.application'
 
 
 # Database
